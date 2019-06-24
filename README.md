@@ -1,7 +1,3 @@
-# Moved to GitLab: https://gitlab.com/dhswt/docker/nginx-basic-auth
-
-
-
 # NGINX Basic Auth Proxy Container
 NGINX container pre-configured to act as a basic auth proxy.
 Simple way to protect HTTP services that don't have any authentication when OAuth or anything similar is to much.

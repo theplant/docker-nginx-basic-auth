@@ -1,14 +1,14 @@
 default: build
 
-docker-image = dhswt/nginx-basic-auth
-docker-tag = 1.2
+docker-image = theplant/nginx-basic-auth
+docker-tag = 1.0
 
 build:
 	docker build --squash \
 		-t $(docker-image):$(docker-tag) \
 		.
 
-push:
+push: build
 	docker push $(docker-image):$(docker-tag)
 
 show-images:
